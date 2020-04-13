@@ -1,0 +1,244 @@
+<html>
+    <head>
+
+   
+        <title>    
+            validation form
+        </title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .user
+            {
+                border:none;
+                border-color: white;
+                outline-color: white;
+                font-size: 15px;
+                width:170px;
+                font-weight:500;
+                
+            }
+            .mail{
+                border:none;
+                border-color: white;
+                outline-color: white;
+                font-weight:500;
+                width:130px;
+                font-size: 15px;
+
+            }
+            .pass{
+                border:none;
+                border-color: white;
+                outline-color: white;
+                width:170px;
+                font-size: 15px;
+                font-weight:500;
+
+            }
+            .fil
+            {
+                width:240px;
+                border-radius: 4px 4px 4px 4px;
+                height:26px;
+                border-color: aliceblue;
+            }
+            .fil1
+            {
+                width:240px;
+                height:26px;
+                border-radius: 4px 4px 4px 4px;
+                border-color: aliceblue;
+            }
+            .fil2
+            {
+                width:240px;
+               height:26px;
+                border-color: aliceblue;
+                border-radius: 4px 4px 4px 4px;
+            }
+            ::placeholder
+            {
+                font-size: 17px;
+                font-weight: 400;
+                color:thistle;
+            }
+            .erase::-webkit-input-placeholder
+            {
+                color:white;
+            } 
+           
+            .field
+            {
+                border:2px solid blue;
+                transition: .4s all;
+            }
+            .field1
+            {
+                border:2px solid gray;
+                transition: .4s all;
+            }
+           
+            .l1
+             {
+                display: none;
+                
+             } 
+              
+             .l2
+             {
+                display: none;
+             } 
+             .l3
+             {
+                 display:none;
+             }   
+             .le2
+             {
+                 display:none;
+             }   
+            
+             .div1
+             {
+                 width: 11px;
+                 height:12px;
+                 
+                 border-top: 2px solid blue;
+                 border-left: 2px solid blue;
+                 position: absolute;
+                    transform: rotate(45deg);
+                    border-radius: 240px;
+               top:1.5px;
+               left:-2px;
+             }
+             .div2
+             {
+                 width: 20px;
+                 
+                 border:1px solid blue;
+                 left:-6px;
+                 transform: rotate(45deg);
+                 top:4px;
+                 position: absolute;
+                   
+                
+             }
+             .div3
+             {
+                 width: 8px;
+                 height:12px;
+                 border: 1px solid transparent;
+                 
+                 position:relative;
+                
+                 left:90%;
+                 top:-22px;
+                 display:none;
+                 
+             }
+             .div1 h2{
+                 margin-top:-12px;
+                 margin-left:3px;
+                 font-weight: 400px;
+             }
+             .eye
+             {
+                 display: block;
+             }
+             .eye1
+             {
+                 display:none;
+             }
+             .check
+             {
+                 block-size: 8px;
+                 position:absolute;
+                 left:-5px;
+                 top:2px;
+             }
+             .visible
+             {
+                 display:block;
+             }
+             
+             .div2
+             {
+                display:none;
+             }
+            .div3:hover .div2
+            {
+                display: block;
+            }
+            .le1
+            {
+                color: gray;
+            }
+            .bu1
+            {
+                background:blue;
+                color: white;
+                border: 1px solid navy;
+                border-radius: 2px;
+                font-size: 13px;
+                padding: 5px;
+            }
+            .s1
+            {
+                font-size: 16px;
+                color:darkred;
+            }
+            .s2
+            {
+                font-size: 16px;
+                color:darkred;
+            }
+            .s3
+            {
+                font-size: 16px;
+                color:darkred;
+            }
+           
+            
+        </style>
+    </head>
+
+            
+    <body>
+            <form onsubmit="return validation()">
+           
+                    <fieldset class="fil">
+                        <legend class="l1">username</legend>
+                        <input type="text" placeholder="username" class="user" >
+                    </fieldset>
+              
+                
+                
+                <span class="s1"></span><br><br>
+                <fieldset class="fil1">
+                        <legend class="l2">e-mail</legend>
+                        <input type="text" placeholder="e-mail" class="mail" >&nbsp;&nbsp;&nbsp;@gmail.com
+                                  
+                </fieldset>
+               
+                <span class="s2"></span><br><br>
+                <fieldset class="fil2">
+                        <legend class="l3">password</legend>
+                        <input type="password" value="" placeholder="password"class="pass">
+                            <div class="div3"><div class="div2"></div><div class="div1"></div><input type="checkbox" class="check"></div>
+                       
+                </fieldset>
+                
+                <span class="s3"></span><br><br>
+                <button type="submit" class="bu1">NEXT</button>
+            </form>
+    
+    <script src="fd.js"></script>
+
+    </body>
+
+          
+
+
+        
+</html>
